@@ -111,23 +111,44 @@ ul li {
 
 /* BODY STYLES */
 
-.column1, .column2 {
+.column1, .column2, .column3 {
 	float: left;
 	border: 1px solid #BEBEBE;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 	background-color: #F5F5F5 !important;
-	margin-bottom: 60px;
+
 }
 
 .column1 {
 	width: 650px;
 	padding-bottom: 20px;
+	margin-bottom: 60px;
 }
+
 
 .column2 {
 	width: 270px;
 	margin-left: 40px;
 	height: 200px;
+	margin-bottom: 60px;
+}
+
+
+.column3 {
+	width: 650px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+    margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid #666;
+}
+
+.column3 ul {
+	float: left;
+	padding-left: 20px;
 }
 
 .row {
@@ -270,6 +291,17 @@ form labe [type=text] {
 		width: 100%;
 		margin-right: 40px;
 		margin-left: 40px;
-	]
+	}
 }
 
+@media only screen and (max-width: 640px) {
+    .navmenu {
+		display: none;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+	.column3 {
+		display: none;
+	}
+}
