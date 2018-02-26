@@ -76,6 +76,10 @@ nav a:hover {
 	border-left: none;
 }
 
+.sidebarh2 {
+	text-align: center;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -250,3 +254,22 @@ form labe [type=text] {
 	padding: 10px;
 	color: #fff;
 }
+
+/* 980px, 768px, 640px 
+576, 768, 992,*/
+
+@media only screen and (max-width: 980px) {
+    .column2 {
+		width: 100%;
+		margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+	.column1 {
+		width: 100%;
+		margin-right: 40px;
+		margin-left: 40px;
+	]
+}
+
