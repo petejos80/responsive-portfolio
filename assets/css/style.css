@@ -135,10 +135,7 @@ ul li {
 
 .column3 {
 	width: 650px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
+    padding: 0px;
     margin-right: 0px;
 	margin-left: 0px;
 	border-bottom: 2px solid #666;
@@ -148,7 +145,7 @@ ul li {
 
 .column3 ul {
 	float: none;
-	padding-left: 20px;
+	padding-left: 0px;
 	text-align: center;
 }
 
@@ -260,7 +257,6 @@ form labe [type=text] {
 /* PORTFOLIO IMAGE FORMATTING */
 
 .imgcolumn1, .imgcolumn2 {
-	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
 	width: 300px;
 	height: 250px;
 	margin-left: 16px;
@@ -277,28 +273,60 @@ form labe [type=text] {
 	color: #fff;
 }
 
-/* 980px, 768px, 640px 
-576, 768, 992,*/
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	float: right;
+	width: 50%;
+}
+
+.group {
+	padding: 0px 5px 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 10px 5px 0px;
+}
+
+.group:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.centered {
+	margin-top: -40px;
+    padding: 10px 0px 10px;
+    margin: 0px 5px 0px;
+    background-color: #3f5c94;
+    text-align: center;
+}
+
+.centered h4 {
+	margin: 0px;
+	font-weight: 900;
+	color: #fff;
+}
+
+
+/* MEDIA QUERIES*/
 
 @media only screen and (max-width: 980px) {
     .column2 {
 		width: 100%;
 		margin-right: 40px;
-    }
-}
+	}
 
-@media only screen and (max-width: 980px) {
 	.column1 {
 		width: 100%;
 		margin-right: 40px;
 		margin-left: 40px;
 	}
-}
-
-@media only screen and (max-width: 640px) {
-    .navmenu {
-		display: none;
-    }
 }
 
 @media only screen and (min-width: 640px) {
@@ -308,24 +336,35 @@ form labe [type=text] {
 }
 
 @media only screen and (max-width: 640px) {
+	.navmenu {
+		display: none;
+    }
+	
 	.main-container {
 		padding-top: 0px;
 	}
+	
 	header {
 		background-color: #3f5c94;
 		border-bottom: none;
 	}
+	
 	.headerh1 {
 		border: none;
 		float: none;
 		text-align: center;
 		padding-top: 25px;
 	}
+	
 	.header-container {
 		padding-top: 0px;
 	}
-	nav a {
-		padding-left: 20px;
-		padding-right: 20px;
+
+}
+
+@media screen and (max-width: 480px) {
+	.left, .right {
+		float: none;
+		width: auto;
 	}
 }
